@@ -40,3 +40,9 @@
 |Strategy||
 |Template Method||
 |Visitor||
+
+
+#### <i>Materials:</i>
+<ul>
+<li>...
+</ul>
