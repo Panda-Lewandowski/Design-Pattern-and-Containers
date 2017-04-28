@@ -9,7 +9,7 @@
  
  |  Pattern |     Description     |      Implementation     |
 | ------------- |:-------------:|:-------------:|
-|Abstract Factory||
+|Abstract Factory|✅ |✅ |
 |Builder||
 |Factory Method||
 |Prototype||
@@ -45,4 +45,11 @@
 #### <i>Materials:</i>
 <ul>
 <li>...
+</ul>
+
+#### <i>Legend:</i>
+<ul>
+<li>✅ - ОК
+<li>⚠️ - problem
+<li>🆘 - need help
 </ul>
