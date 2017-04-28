@@ -9,7 +9,7 @@
  
  |  Pattern |     Description     |      Implementation     |
 | ------------- |:-------------:|:-------------:|
-|Abstract Factory|✅ |✅ |
+|Abstract Factory| 🌀 |✅ |
 |Builder||
 |Factory Method||
 |Prototype||
@@ -52,4 +52,5 @@
 <li>✅ - ОК
 <li>⚠️ - problem
 <li>🆘 - need help
+<li>🌀 - in process
 </ul>
