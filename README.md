@@ -4,20 +4,20 @@
            2nd course, 4th semester
 
            Bauman Moscow State Technical University
-           
+
  ### <i>Creational patterns</i>
- 
+
  |  Pattern |     Description     |      Implementation     |
 | ------------- |:-------------:|:-------------:|
 |Abstract Factory| 🌀 |✅ |
 |Builder| 🌀 |✅|
-|Factory Method||
+|Factory Method|🌀|✅|
 |Prototype||
 |Singleton||
 |Pool||
 
  ### <i>Structural pattern</i>
- 
+
  |  Pattern |     Description     |      Implementation     |
 | ------------- |:-------------:|:-------------:|
 |Adapter||
@@ -28,7 +28,7 @@
 |Proxy||
 
  ### <i> Behavioral patterns</i>
- 
+
  |  Pattern |     Description     |      Implementation     |
 | ------------- |:-------------:|:-------------:|
 |Chain of Responsibility||
