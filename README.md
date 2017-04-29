@@ -10,7 +10,7 @@
  |  Pattern |     Description     |      Implementation     |
 | ------------- |:-------------:|:-------------:|
 |Abstract Factory| 🌀 |✅ |
-|Builder||
+|Builder||✅|
 |Factory Method||
 |Prototype||
 |Singleton||
