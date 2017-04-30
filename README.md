@@ -45,7 +45,7 @@
 #### <i>Materials:</i>
 |Link|Type|Language|
 |-------------|:-------------:|:-------------:|
-|Design Patterns|:vhs:|🇷🇺|
+|[Design Patterns](https://vk.com/videos-54530371?section=album_56085788)|:vhs:|🇷🇺|
 
 
 #### <i>Legend:</i>
