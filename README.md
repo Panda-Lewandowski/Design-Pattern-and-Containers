@@ -43,9 +43,10 @@
 
 
 #### <i>Materials:</i>
-<ul>
-<li>...
-</ul>
+|Link|Type|Language|
+|-------------|:-------------:|:-------------:|
+|Design Patterns|:vhs:|🇷🇺|
+
 
 #### <i>Legend:</i>
 <ul>
@@ -53,4 +54,6 @@
 <li>⚠️ - problem
 <li>🆘 - need help
 <li>🌀 - in process
+<li>:vhs: - video
+<li>🇷🇺 - Russian language
 </ul>
