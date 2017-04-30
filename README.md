@@ -13,7 +13,7 @@
 |[Builder](https://github.com/Panda-Lewandowski/Design-Patterns/wiki/Builder)| 🌀 |✅|
 |[Factory Method](https://github.com/Panda-Lewandowski/Design-Patterns/wiki/Factory-Method)|🌀|✅|
 |[Prototype](https://github.com/Panda-Lewandowski/Design-Patterns/wiki/Prototype)|🌀|✅|
-|Singleton||
+|[Singleton](https://github.com/Panda-Lewandowski/Design-Patterns/wiki/Singleton)|🌀|✅|
 |Pool||
 
  ### <i>Structural pattern</i>
