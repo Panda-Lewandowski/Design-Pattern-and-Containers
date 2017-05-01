@@ -14,7 +14,7 @@
 |[Factory Method](https://github.com/Panda-Lewandowski/Design-Patterns/wiki/Factory-Method)|🌀|✅|
 |[Prototype](https://github.com/Panda-Lewandowski/Design-Patterns/wiki/Prototype)|🌀|✅|
 |[Singleton](https://github.com/Panda-Lewandowski/Design-Patterns/wiki/Singleton)|🌀|✅|
-|Pool||
+|[Pool](https://github.com/Panda-Lewandowski/Design-Patterns/wiki/Pool)|🌀|✅|
 
  ### <i>Structural pattern</i>
 
