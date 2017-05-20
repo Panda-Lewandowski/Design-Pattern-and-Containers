@@ -57,3 +57,4 @@
 <li>:vhs: - video
 <li>🇷🇺 - Russian language
 </ul>
+ыеее путтерны
