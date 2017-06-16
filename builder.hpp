@@ -8,9 +8,9 @@
 class Pizza
 {
 private:
-    std::string dough;
-    std::string sauce;
-    std::string topping;
+    std::string dough = "classic";
+    std::string sauce = "classic";
+    std::string topping = "classic";
 public:
     Pizza() { }
     ~Pizza() { }
@@ -33,15 +33,13 @@ class PizzaBuilder
 {
 protected:
     std::shared_ptr<Pizza> pizza;
-public:
     PizzaBuilder() {}
-    virtual ~PizzaBuilder() {}
+public:
     std::shared_ptr<Pizza> GetPizza() { return pizza; }
-
     void createNewPizzaProduct() { pizza.reset (new Pizza); }
-    virtual void buildDough()=0;
-    virtual void buildSauce()=0;
-    virtual void buildTopping()=0;
+    virtual void buildDough() {}
+    virtual void buildSauce() {}
+    virtual void buildTopping() {}
 };
 
 
@@ -51,7 +49,6 @@ class HawaiianPizzaBuilder : public PizzaBuilder
 public:
     HawaiianPizzaBuilder() : PizzaBuilder() {}
     ~HawaiianPizzaBuilder(){}
-    void buildDough() { pizza->SetDough("cross");}
     void buildSauce() { pizza->SetSauce("mild");}
     void buildTopping() { pizza->SetTopping( "ham and pineapple");}
 };
