@@ -9,7 +9,7 @@
 
  |  Pattern |     Description     |      Implementation     |
 | ------------- |:-------------:|:-------------:|
-|[Abstract Factory](https://github.com/Panda-Lewandowski/Design-Patterns/wiki/Abstract-Factory)| 🌀 |✅ |
+|[Abstract Factory](../../wiki/Abstract-Factory)| ✅ |✅ |
 |[Builder](https://github.com/Panda-Lewandowski/Design-Patterns/wiki/Builder)| 🌀 |✅|
 |[Factory Method](https://github.com/Panda-Lewandowski/Design-Patterns/wiki/Factory-Method)|🌀|✅|
 |[Prototype](https://github.com/Panda-Lewandowski/Design-Patterns/wiki/Prototype)|🌀|✅|
