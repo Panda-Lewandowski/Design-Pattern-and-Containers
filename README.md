@@ -10,7 +10,7 @@
  |  Pattern |     Description     |      Implementation     |
 | ------------- |:-------------:|:-------------:|
 |[Abstract Factory](../../wiki/Abstract-Factory)| ✅ |✅ |
-|[Builder](https://github.com/Panda-Lewandowski/Design-Patterns/wiki/Builder)| 🌀 |✅|
+|[Builder](https://github.com/Panda-Lewandowski/Design-Patterns/wiki/Builder)| ✅ |✅|
 |[Factory Method](https://github.com/Panda-Lewandowski/Design-Patterns/wiki/Factory-Method)|🌀|✅|
 |[Prototype](https://github.com/Panda-Lewandowski/Design-Patterns/wiki/Prototype)|🌀|✅|
 |[Singleton](https://github.com/Panda-Lewandowski/Design-Patterns/wiki/Singleton)|🌀|✅|
