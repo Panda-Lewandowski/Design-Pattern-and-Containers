@@ -1,8 +1,9 @@
 #ifndef FACTORY_METHOD_HPP
 #define FACTORY_METHOD_HPP
-
 #include <string>
 #include <iostream>
+
+using namespace std;
 
 class Product {
 public:
@@ -22,17 +23,29 @@ public:
 
 class Creator {
 public:
-    virtual Product* factoryMethod() = 0;
+  Product* GetProduct();
+protected:
+  virtual Product* CreateProduct() = 0;
+private:
+  Product* prod = nullptr;
 };
 
-class ConcreteCreatorA: public Creator {
-public:
-    Product* factoryMethod() {return new ConcreteProductA();}
+template <typename tprod>
+class ConcreteCreator : public Creator
+{
+protected:
+  virtual Product* CreateProduct()
+  {
+    return new tprod;
+  }
+
 };
 
-class ConcreteCreatorB: public Creator {
-public:
-    Product* factoryMethod() {return new ConcreteProductB();}
-};
+Product* Creator::GetProduct()
+{
+  if(prod == nullptr)
+    prod = CreateProduct();
 
+  return prod;
+}
 #endif // FACTORY_METHOD_HPP
