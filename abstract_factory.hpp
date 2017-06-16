@@ -5,108 +5,106 @@
 
 using namespace std;
 
-// Абстрактные базовые классы всех возможных видов воинов
-class Infantryman
+// Абстрактные базовые классы графических примитивов
+class Ellipse
 {
 public:
     virtual void info() = 0;
-    virtual ~Infantryman() {}
+    virtual ~Ellipse() {}
 };
 
-class Archer
+class Line
 {
 public:
     virtual void info() = 0;
-    virtual ~Archer() {}
+    virtual ~Line() {}
 };
 
-class Horseman
+class Polygon
 {
 public:
     virtual void info() = 0;
-    virtual ~Horseman() {}
+    virtual ~Polygon() {}
 };
 
-// Классы всех видов воинов Римской армии
-class RomanInfantryman: public Infantryman
+// Классы граф. примитивов для двух разных библиотек
+class EllipseA: public Ellipse
 {
 public:
     void info() {
-        cout << "RomanInfantryman" << endl;
+        cout << "Ellipse from lib A" << endl;
     }
 };
 
-class RomanArcher: public Archer {
+class LineA: public Line {
 public:
     void info() {
-        cout << "RomanArcher" << endl;
+        cout << "Line from lib A" << endl;
     }
 };
 
-class RomanHorseman: public Horseman {
+class PolygonA: public Polygon {
 public:
     void info() {
-        cout << "RomanHorseman" << endl;
+        cout << "Polygon from lib A" << endl;
     }
 };
 
-// Классы всех видов воинов армии Карфагена
-class CarthaginianInfantryman: public Infantryman
+class EllipseB: public Ellipse
 {
 public:
     void info() {
-        cout << "CarthaginianInfantryman" << endl;
+        cout << "Ellipse from lib B" << endl;
     }
 };
 
-class CarthaginianArcher: public Archer
-{
+class LineB: public Line {
 public:
     void info() {
-        cout << "CarthaginianArcher" << endl;
+        cout << "Line from lib B" << endl;
     }
 };
 
-class CarthaginianHorseman: public Horseman
-{
+class PolygonB: public Polygon {
 public:
     void info() {
-        cout << "CarthaginianHorseman" << endl;
+        cout << "Polygon from lib B" << endl;
     }
 };
 
-// Абстрактная фабрика для производства воинов
-class ArmyFactory
+
+// Абстрактная фабрика для производства примитивов
+class GrafFactory
 {
 public:
-    virtual Infantryman* createInfantryman() = 0;
-    virtual Archer* createArcher() = 0;
-    virtual Horseman* createHorseman() = 0;
-    virtual ~ArmyFactory() {}
+    virtual Ellipse* createEllipse() = 0;
+    virtual Line* createLine() = 0;
+    virtual Polygon* createPolygon() = 0;
+    virtual ~GrafFactory() {}
 };
 
 // Фабрика для создания воинов Римской армии
-class RomanArmyFactory: public ArmyFactory
+class GrafAFactory: public GrafFactory
 {
 public:
-    Infantryman* createInfantryman() { return new RomanInfantryman; }
-    Archer* createArcher() { return new RomanArcher; }
-    Horseman* createHorseman() { return new RomanHorseman;}
+    Ellipse* createEllipse() {return new EllipseA; }
+    Line* createLine() {return new LineA;  }
+    Polygon* createPolygon() {return new PolygonA; }
 };
 
 // Фабрика для создания воинов армии Карфагена
-class CarthaginianArmyFactory: public ArmyFactory
+class GrafBFactory: public GrafFactory
 {
 public:
-    Infantryman* createInfantryman() { return new CarthaginianInfantryman; }
-    Archer* createArcher() { return new CarthaginianArcher; }
-    Horseman* createHorseman() { return new CarthaginianHorseman;}
+    Ellipse* createEllipse() {return new EllipseB; }
+    Line* createLine() {return new LineB;  }
+    Polygon* createPolygon() {return new PolygonB; }
 };
 
 // Класс, содержащий всех воинов той или иной армии
-class Army {
+class Graf {
 public:
-    ~Army() {
+    ~Graf() {
         size_t i;
         for(i=0; i<vi.size(); ++i) delete vi[i];
         for(i=0; i<va.size(); ++i) delete va[i];
@@ -118,20 +116,20 @@ public:
         for(i=0; i<va.size(); ++i) va[i]->info();
         for(i=0; i<vh.size(); ++i) vh[i]->info();
     }
-    vector<Infantryman*> vi;
-    vector<Archer*> va;
-    vector<Horseman*> vh;
+    vector<Ellipse*> vi;
+    vector<Line*> va;
+    vector<Polygon*> vh;
 };
 
 // Здесь создается армия той или иной стороны
-class Game
+class Scene
 {
 public:
-    Army* createArmy( ArmyFactory& factory ) {
-        Army* p = new Army;
-        p->vi.push_back( factory.createInfantryman());
-        p->va.push_back( factory.createArcher());
-        p->vh.push_back( factory.createHorseman());
+    Graf* createGraf( GrafFactory& factory ) {
+        Graf* p = new Graf;
+        p->vi.push_back( factory.createEllipse());
+        p->va.push_back( factory.createLine());
+        p->vh.push_back( factory.createPolygon());
         return p;
 }
 };
