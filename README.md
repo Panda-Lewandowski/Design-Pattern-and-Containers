@@ -20,7 +20,7 @@
 
  |  Pattern |     Description     |      Implementation     |
 | ------------- |:-------------:|:-------------:|
-|Adapter||
+|[Adapter](../../wiki/Adapter)||
 |Bridge||
 |Composite||
 |Decorator||
