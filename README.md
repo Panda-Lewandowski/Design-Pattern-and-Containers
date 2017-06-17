@@ -20,9 +20,9 @@
 
  |  Pattern |     Description     |      Implementation     |
 | ------------- |:-------------:|:-------------:|
-|[Adapter](../../wiki/Adapter)||
-|Bridge||
-|Composite||
+|[Adapter](../../wiki/Adapter)|✅|✅|
+|[Bridge](../../wiki/Composite)|✅|✅|
+|[Composite](../../wiki/Composite)|✅|✅|
 |Decorator||
 |Facade||
 |Proxy||
