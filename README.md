@@ -23,10 +23,10 @@
 |[Adapter](../../wiki/Adapter)|✅|✅|
 |[Bridge](../../wiki/Composite)|✅|✅|
 |[Composite](../../wiki/Composite)|✅|✅|
-|Decorator||
-|Facade||
-|Proxy||
-|Flyweight||
+|[Decorator](../../wiki/Decorator)|✅|✅|
+|[Facade](../../wiki/Facade)|✅|✅|
+|[Proxy](../../wiki/Proxy)|✅|✅|
+|[Flyweight](../../Flyweight)|✅|✅|
 
  ### <i> Behavioral patterns</i>
 
