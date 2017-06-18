@@ -26,7 +26,7 @@
 |[Decorator](../../wiki/Decorator)|✅|✅|
 |[Facade](../../wiki/Facade)|✅|✅|
 |[Proxy](../../wiki/Proxy)|✅|✅|
-|[Flyweight](../../Flyweight)|✅|✅|
+|[Flyweight](../../wiki/Flyweight)|✅|✅|
 
  ### <i> Behavioral patterns</i>
 
