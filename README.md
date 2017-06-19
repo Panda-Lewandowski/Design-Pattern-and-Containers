@@ -32,15 +32,17 @@
 
  |  Pattern |     Description     |      Implementation     |
 | ------------- |:-------------:|:-------------:|
-|Chain of Responsibility||
-|Command||
-|Mediator||
-|Memento||
-|Observer||
-|State||
-|Strategy||
-|Template Method||
-|Visitor||
+|Chain of Responsibility|✅|✅|
+|Command|✅|✅|
+|Mediator|
+|Memento|
+|Observer|
+|State|
+|Strategy|
+|Template Method|
+|Visitor|
+|Interpreter|✅|⚠️|
+|Iterator|✅|⚠️|
 
 
 #### <i>Materials:</i>
