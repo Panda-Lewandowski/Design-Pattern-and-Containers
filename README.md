@@ -35,8 +35,8 @@
 |Chain of Responsibility|✅|✅|
 |Command|✅|✅|
 |Mediator|✅|✅|
-|Memento(holder)|✅|✅|
-|Observer|
+|Holder(NOT Memento)|✅|✅|
+|Observer|✅|⚠️🌀|
 |State|
 |Strategy|
 |Template Method|
