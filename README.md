@@ -34,8 +34,8 @@
 | ------------- |:-------------:|:-------------:|
 |Chain of Responsibility|✅|✅|
 |Command|✅|✅|
-|Mediator|
-|Memento|
+|Mediator|✅|✅|
+|Memento(holder)|✅|✅|
 |Observer|
 |State|
 |Strategy|
