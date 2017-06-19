@@ -4,6 +4,8 @@ class Command //базовый класс команды
 {
 public:
     virtual bool execute() = 0;
+protected:
+  Command() {}
 };
 
 template<typename Reciever>
