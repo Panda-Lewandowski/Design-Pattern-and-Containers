@@ -1,0 +1,33 @@
+delegate void Eventhangler(Object^ source, double a);
+public ref class Manager
+{
+public:
+  event Eventhangler^ OnHandler;
+  void Method()
+  {
+    OnHandler(this, 10);
+  }
+};
+
+public ref class Watcher
+{
+public:
+  Watcher (Manager ^m)
+  {
+    m->OnHandler += gcnew Eventhangler(this, &Watcher::f);
+  }
+  void f(Object ^source, double a)
+  { console::writeLine("method f!"); }
+  
+...
+
+{
+  Manager^ m = gcnew Manager();
+  Watcher^ w = gcnew Watcher(m);
+  m->Method();
+  ...
+}
+
+ref - память распределяется только динамически под объект
+^ - замена * - ук-ль на управляемую кучу
++= - т.к. на 1 событие можно подписываться много раз
