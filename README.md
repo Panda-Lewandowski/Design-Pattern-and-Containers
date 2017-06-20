@@ -49,8 +49,7 @@
 |Link|Type|Language|
 |-------------|:-------------:|:-------------:|
 |[Design Patterns](https://vk.com/videos-54530371?section=album_56085788)|:vhs:|🇷🇺|
-|Design Patterns:
-Elements of Reusable Object-Oriented Software| :book: |🇷🇺 :uk: etc|
+|[Design Patterns: Elements of Reusable Object-Oriented Software](https://en.wikipedia.org/wiki/Design_Patterns)| :book: |🇷🇺 :uk: etc|
 
 
 #### <i>Legend:</i>
