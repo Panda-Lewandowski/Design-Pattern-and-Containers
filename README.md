@@ -32,15 +32,15 @@
 
  |  Pattern |     Description     |      Implementation     |
 | ------------- |:-------------:|:-------------:|
-|[Chain of Responsibility](../../wiki/Chain-of-Resposibility)|✅|✅|
+|[Chain of Responsibility](../../wiki/Chain-of-Responsibility)|✅|✅|
 |[Command](../../wiki/Command)|✅|✅|
 |[Mediator](../../wiki/Mediator)|✅|✅|
 |[Holder](../../wiki/Holder)(NOT Memento)|✅|✅|
-|[Observer](../../wiki/Observer)|✅|⚠️🌀|
-|[State](../../wiki/State)|
-|[Strategy](../../wiki/Strategy)|
-|[Template Method](../../wiki/Template-Method)|
-|[Visitor](../../wiki/Visitor)|
+|[Observer](../../wiki/Observer)|✅|🌀|
+|[State](../../wiki/State)|✅|⚠️|
+|[Strategy](../../wiki/Strategy)|✅|⚠️|
+|[Template Method](../../wiki/Template-Method)|✅|⚠️|
+|[Visitor](../../wiki/Visitor)|✅|⚠️|
 |[Interpreter](../../wiki/Interpreter)|✅|⚠️|
 |[Iterator](../../wiki/Iterator)|✅|⚠️|
 
