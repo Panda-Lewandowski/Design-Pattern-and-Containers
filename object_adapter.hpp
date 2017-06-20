@@ -1,33 +1,44 @@
 #ifndef OBJECT_ADAPTER_HPP
 #define OBJECT_ADAPTER_HPP
 
-// Уже существующий класс температурного датчика окружающей среды
-class FahrenheitSensor {
+class TextShape : public Shape {
 public:
-    // Получить показания температуры в градусах Фаренгейта
-    float getFahrenheitTemp() { 
-        float t = 32.0;
-    // ... какой то код 
-        return t;
-    } 
-};
-class Sensor {
-public:
-    virtual ~Sensor() {}
-    virtual float getTemperature() = 0;
+    TextShape(TextView*);
+    virtual void BoundingBox( Point& bottomLeft, Point& topRight) const;
+    virtual bool IsEmpty() const;
+    virtual Manipulator* CreateManipulator() const;
+private:
+    TextView* _text;
 };
 
-class Adapter : public Sensor {
-public:
-    Adapter( FahrenheitSensor* p ) : p_fsensor(p) { }
-    ~Adapter() {
-    delete p_fsensor;
-    }
-    float getTemperature() {
-    return (p_fsensor->getFahrenheitTemp()-32.0)*5.0/9.0; 
-    }
-private:
-    FahrenheitSensor* p_fsensor;
-};
+
+
+TextShape::TextShape (TextView* t) {
+    _text = t;
+}
+
+
+void TextShape::BoundingBox (Point& bottomLeft, Point& topRight) const
+{
+    Coord bottom, left, width, height;
+
+    _text->GetOrigin(bottom, left);
+    _text->GetExtent(width, height);
+
+    bottomLeft = Point(bottom, left);
+    topRight = Point(bottom + height, left + width);
+}
+
+
+bool TextShape::IsEmpty () const
+{
+    return _text->IsEmpty();
+}
+
+
+Manipulator* TextShape::CreateManipulator () const
+{
+    return new TextManipulator(this);
+}
 
 #endif // OBJECT_ADAPTER_HPP
