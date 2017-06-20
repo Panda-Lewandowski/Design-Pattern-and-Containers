@@ -21,7 +21,7 @@
  |  Pattern |     Description     |      Implementation     |
 | ------------- |:-------------:|:-------------:|
 |[Adapter](../../wiki/Adapter)|✅|✅|
-|[Bridge](../../wiki/Composite)|✅|✅|
+|[Bridge](../../wiki/Bridge)|✅|✅|
 |[Composite](../../wiki/Composite)|✅|✅|
 |[Decorator](../../wiki/Decorator)|✅|✅|
 |[Facade](../../wiki/Facade)|✅|✅|
